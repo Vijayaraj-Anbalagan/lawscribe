@@ -1,6 +1,5 @@
-'use client';
+'use client'
 
-import React from 'react'
 import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -18,11 +17,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { FileText, Shield, Zap, Users, CheckCircle, ArrowRight, Menu } from 'lucide-react'
+import { FileText, Shield, Zap, Users, CheckCircle, ArrowRight, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Home = () => {
+export function LandingPageComponent() {
   const [email, setEmail] = useState("")
   const [isScrolled, setIsScrolled] = useState(false)
   const { scrollYProgress } = useScroll()
@@ -263,7 +262,7 @@ const Home = () => {
               >
                 <Card className="bg-white h-full">
                   <CardContent className="p-6 flex flex-col h-full">
-                    <p className="italic mb-4 flex-grow">{testimonial.quote}</p>
+                    <p className="italic mb-4 flex-grow">"{testimonial.quote}"</p>
                     <div>
                       <p className="font-semibold">{testimonial.name}</p>
                       <p className="text-sm text-gray-600">{testimonial.role}</p>
@@ -355,6 +354,3 @@ const Home = () => {
     </div>
   )
 }
-
-
-export default Home
