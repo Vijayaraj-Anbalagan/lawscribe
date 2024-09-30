@@ -47,7 +47,7 @@ export default function CreateFIR() {
       incidentDescription: "",
       location: "",
       dateTime: new Date(),
-      officerName: "", // Pre-filled officer name
+      officerName: "",
     },
   });
 
@@ -195,7 +195,7 @@ export default function CreateFIR() {
                     <FormItem>
                       <FormLabel>Officer Name</FormLabel>
                       <FormControl>
-                        <Input {...field} readOnly />
+                        <Input {...field} />
                       </FormControl>
                     </FormItem>
                   )}

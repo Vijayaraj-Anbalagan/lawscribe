@@ -34,10 +34,12 @@ export function LayoutComponent({ children }: { children: React.ReactNode }) {
                 Analytics
               </Button>
             </Link>
+            <Link href='/login'>
             <Button variant="ghost" className="text-white hover:text-[#8B0000]">
               <LogOut className="mr-2 h-4 w-4" />
               Logout
             </Button>
+            </Link>
           </div>
         </nav>
       </header>
