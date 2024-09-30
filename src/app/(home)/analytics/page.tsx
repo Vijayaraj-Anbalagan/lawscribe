@@ -7,17 +7,20 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
 const firStatusData = [
-  { name: 'New', value: 30 },
-  { name: 'In Progress', value: 45 },
-  { name: 'Completed', value: 25 },
-];
+    { name: 'New', value: 40 },
+    { name: 'In Progress', value: 50 },
+    { name: 'Completed', value: 30 },
+    { name: 'Under Review', value: 15 },
+  ];
+  
 
-const officerPerformanceData = [
-  { name: 'John Doe', firsHandled: 20, avgTimePerFIR: 2.5 },
-  { name: 'Jane Smith', firsHandled: 15, avgTimePerFIR: 3.2 },
-  { name: 'Mike Johnson', firsHandled: 25, avgTimePerFIR: 2.1 },
-  { name: 'Sarah Brown', firsHandled: 18, avgTimePerFIR: 2.8 },
-];
+  const officerPerformanceData = [
+    { name: 'Inspector Rajesh Kumar', firsHandled: 25, avgTimePerFIR: 2.5 },
+    { name: 'Sub-Inspector Priya Verma', firsHandled: 20, avgTimePerFIR: 3.0 },
+    { name: 'Inspector Mohit Sharma', firsHandled: 30, avgTimePerFIR: 2.1 },
+    { name: 'Head Constable Anil Singh', firsHandled: 18, avgTimePerFIR: 2.9 },
+  ];
+  
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 

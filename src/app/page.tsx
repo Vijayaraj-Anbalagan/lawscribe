@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/sheet"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { FileText, Shield, Zap, Users, CheckCircle, ArrowRight, Menu } from 'lucide-react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 
 const Home = () => {
@@ -94,13 +94,13 @@ const Home = () => {
           className="absolute inset-0 z-0"
           style={{ opacity }}
         >
-          <Image 
+          {/* <Image 
             src="/placeholder.svg?height=1080&width=1920" 
             alt="Law background" 
             layout="fill" 
             objectFit="cover" 
             className="opacity-20"
-          />
+          /> */}
         </motion.div>
         <div className="container mx-auto px-4 pt-20 text-center relative z-10">
           <motion.h1 
@@ -117,10 +117,14 @@ const Home = () => {
             Streamline your FIR process with AI-powered insights and seamless collaboration
           </motion.p>
           <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
+          <Link href={'/dashboard'}>
             <Button className="bg-[#8B0000] hover:bg-[#6B0000] text-white px-8 py-6 text-lg rounded-full">
+             
               Get Started
+              
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </Link>
           </motion.div>
         </div>
         <motion.div 
@@ -129,19 +133,6 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
-            <Image 
-              src="/placeholder.svg?height=720&width=1280" 
-              alt="LawScribe Demo" 
-              layout="fill" 
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Button variant="secondary" size="lg" className="text-xl">
-                Watch Demo
-              </Button>
-            </div>
-          </div>
         </motion.div>
       </section>
 

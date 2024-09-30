@@ -10,16 +10,16 @@ import { Pen } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 const firData = {
-  incidentDescription: "A robbery occurred at 123 Main St. The suspect, wearing a black hoodie, stole a laptop and fled the scene.",
-  location: "123 Main St, Cityville",
-  dateTime: "2023-06-15T14:30:00",
-  officerName: "John Doe",
-  legalSections: [
-    { section: "Section 392", description: "Punishment for robbery", act: "Indian Penal Code" },
-    { section: "Section 380", description: "Theft in dwelling house, etc.", act: "Indian Penal Code" },
-  ]
-}
-
+    incidentDescription: "A robbery took place at Gwalior Mall, where the suspect snatched a woman's purse containing Rs. 50,000 cash and fled the scene.",
+    location: "Gwalior Mall, Madhya Pradesh",
+    dateTime: "2023-07-15T14:30:00",
+    officerName: "Inspector Rajesh Kumar",
+    legalSections: [
+      { section: "Section 392", description: "Punishment for robbery", act: "Indian Penal Code" },
+      { section: "Section 380", description: "Theft in dwelling house, etc.", act: "Indian Penal Code" },
+    ]
+  }
+  
 const FirReview = () => {
   const [signature, setSignature] = useState("")
   const router = useRouter()

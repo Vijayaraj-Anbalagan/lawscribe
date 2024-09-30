@@ -9,11 +9,13 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ScrollArea } from "@/components/ui/scroll-area"
 
 const initialFIRs = [
-  { id: 'FIR001', title: 'Theft at Main Street', date: '2023-06-10', section: '379 IPC', crimeType: 'Theft', location: 'Main Street' },
-  { id: 'FIR002', title: 'Assault in Central Park', date: '2023-06-12', section: '323 IPC', crimeType: 'Assault', location: 'Central Park' },
-  { id: 'FIR003', title: 'Vandalism at City Hall', date: '2023-06-14', section: '427 IPC', crimeType: 'Vandalism', location: 'City Hall' },
-  { id: 'FIR004', title: 'Robbery on Elm Street', date: '2023-06-15', section: '392 IPC', crimeType: 'Robbery', location: 'Elm Street' },
-]
+  { id: 'FIR001', title: 'Theft at Bhopal Railway Station', date: '2023-07-10', section: '379 IPC', crimeType: 'Theft', location: 'Bhopal Railway Station' },
+  { id: 'FIR002', title: 'Assault near Indore Market', date: '2023-07-12', section: '323 IPC', crimeType: 'Assault', location: 'Indore Market' },
+  { id: 'FIR003', title: 'Vandalism at Ujjain Temple', date: '2023-07-14', section: '427 IPC', crimeType: 'Vandalism', location: 'Ujjain Temple' },
+  { id: 'FIR004', title: 'Robbery at Gwalior Mall', date: '2023-07-15', section: '392 IPC', crimeType: 'Robbery', location: 'Gwalior Mall' },
+  { id: 'FIR005', title: 'Fraud at Jabalpur Bank', date: '2023-07-16', section: '420 IPC', crimeType: 'Fraud', location: 'Jabalpur Bank' },
+];
+
 
 export default function SearchFIR() {
   const [searchResults, setSearchResults] = useState(initialFIRs)

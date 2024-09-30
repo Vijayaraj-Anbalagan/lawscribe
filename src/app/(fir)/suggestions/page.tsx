@@ -9,10 +9,13 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { useRouter } from 'next/navigation'
 
 const initialSuggestions = [
-  { id: 1, section: "Section 302", description: "Punishment for murder", act: "Indian Penal Code" },
-  { id: 2, section: "Section 376", description: "Punishment for rape", act: "Indian Penal Code" },
-  { id: 3, section: "Section 420", description: "Cheating and dishonestly inducing delivery of property", act: "Indian Penal Code" },
-]
+    { id: 1, section: "Section 302", description: "Punishment for murder", act: "Indian Penal Code" },
+    { id: 2, section: "Section 376", description: "Punishment for rape", act: "Indian Penal Code" },
+    { id: 3, section: "Section 392", description: "Punishment for robbery", act: "Indian Penal Code" },
+    { id: 4, section: "Section 498A", description: "Husband or relative subjecting woman to cruelty", act: "Indian Penal Code" },
+    { id: 5, section: "Section 420", description: "Cheating and dishonestly inducing delivery of property", act: "Indian Penal Code" },
+  ];
+  
 
 const AiSuggestions = () => {
 

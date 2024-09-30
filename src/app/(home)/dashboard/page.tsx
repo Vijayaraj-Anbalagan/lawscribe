@@ -5,19 +5,18 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import Link from 'next/link'
 import { FileText, Search, BarChart2 } from 'lucide-react'
-
 const recentFIRs = [
-  { id: 'FIR001', title: 'Theft at Main Street', status: 'In Progress' },
-  { id: 'FIR002', title: 'Assault in Central Park', status: 'Completed' },
-  { id: 'FIR003', title: 'Vandalism at City Hall', status: 'Under Review' },
-]
-
+  { id: 'FIR001', title: 'Theft at Bhopal Railway Station', status: 'In Progress' },
+  { id: 'FIR002', title: 'Assault near Indore Market', status: 'Completed' },
+  { id: 'FIR003', title: 'Vandalism at Ujjain Temple', status: 'Under Review' },
+  { id: 'FIR004', title: 'Robbery at Gwalior Mall', status: 'New' },
+];
 const firStatuses = [
-  { id: 'FIR001', title: 'Theft at Main Street', status: 'In Progress', officer: 'John Doe' },
-  { id: 'FIR002', title: 'Assault in Central Park', status: 'Completed', officer: 'Jane Smith' },
-  { id: 'FIR003', title: 'Vandalism at City Hall', status: 'Under Review', officer: 'Mike Johnson' },
-  { id: 'FIR004', title: 'Robbery on Elm Street', status: 'New', officer: 'Sarah Brown' },
-]
+  { id: 'FIR001', title: 'Theft at Bhopal Railway Station', status: 'In Progress', officer: 'Inspector Rajesh Kumar' },
+  { id: 'FIR002', title: 'Assault near Indore Market', status: 'Completed', officer: 'Sub-Inspector Priya Verma' },
+  { id: 'FIR003', title: 'Vandalism at Ujjain Temple', status: 'UnderReview', officer: 'Inspector Mohit Sharma' },
+  { id: 'FIR004', title: 'Robbery at Gwalior Mall', status: 'New', officer: 'Head Constable Anil Singh' },
+];
 
 export default function Dashboard() {
   return (
@@ -75,7 +74,7 @@ export default function Dashboard() {
         </Card>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-4">
         <Link href="/create-fir">
           <Button className="w-full h-24 text-lg bg-[#8B0000] hover:bg-[#6B0000]">
             <FileText className="mr-2 h-6 w-6" /> Create New FIR
